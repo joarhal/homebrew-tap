@@ -11,7 +11,7 @@ class Piperig < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/joarhal/piperig/releases/download/v0.3.0/piperig_0.3.0_darwin_amd64.tar.gz"
-      sha256 "11feb958b72a0369dff771772bc1067df18db0feeef289902ef384a1341e0571"
+      sha256 "daa51f20543ba4bc6649740645f6b21f9ea5e28840922193b3ae3ff21375beee"
 
       define_method(:install) do
         bin.install "piperig"
@@ -19,7 +19,7 @@ class Piperig < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/joarhal/piperig/releases/download/v0.3.0/piperig_0.3.0_darwin_arm64.tar.gz"
-      sha256 "6af050949d4dd733606336adad7c4fcc7ddd7ae789f505a74967ad4cf851159e"
+      sha256 "f7d7bfb4e69e05be5055a553162f3718f5c997d34ebe254ab2ff4918cabb8a4a"
 
       define_method(:install) do
         bin.install "piperig"
@@ -30,14 +30,14 @@ class Piperig < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/joarhal/piperig/releases/download/v0.3.0/piperig_0.3.0_linux_amd64.tar.gz"
-      sha256 "08306e54d376779ed028230d28c50a43f22a34ebdec596dcea38c1764a7cf144"
+      sha256 "5c5502a580f4ccfbb91abcd782385145289c66c79e336a1b594c78e11d128595"
       define_method(:install) do
         bin.install "piperig"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/joarhal/piperig/releases/download/v0.3.0/piperig_0.3.0_linux_arm64.tar.gz"
-      sha256 "17570ab99851df4e9ed489f073322a1e76b135e3ea01171127042b95bff77cee"
+      sha256 "d58441eb12c39d9810634348a0ffe6e25bdc8e8f7d44695ce2e2c747a1eb5513"
       define_method(:install) do
         bin.install "piperig"
       end
