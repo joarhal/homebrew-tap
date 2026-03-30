@@ -5,21 +5,21 @@
 class Piperig < Formula
   desc "Declarative pipeline runner for shell scripts"
   homepage "https://github.com/joarhal/piperig"
-  version "0.3.6"
+  version "0.3.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joarhal/piperig/releases/download/v0.3.6/piperig_0.3.6_darwin_amd64.tar.gz"
-      sha256 "45725a838707f3b66cb0fb1340910bf3b40197fbaa8b17f6c4df921773d2fd6f"
+      url "https://github.com/joarhal/piperig/releases/download/v0.3.7/piperig_0.3.7_darwin_amd64.tar.gz"
+      sha256 "f59942a1c16ba6f32ac47ed23e4f9da515cb56d6ff9847ecd0670f8f7b99b000"
 
       define_method(:install) do
         bin.install "piperig"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joarhal/piperig/releases/download/v0.3.6/piperig_0.3.6_darwin_arm64.tar.gz"
-      sha256 "900b80c59bf0b379a3ce706cc7cd046bf60b0ffd6c5d2be5b163751e563207a1"
+      url "https://github.com/joarhal/piperig/releases/download/v0.3.7/piperig_0.3.7_darwin_arm64.tar.gz"
+      sha256 "3d1a6a8e86b61675ca6d84aa07492345bb60f232882718bdf4c9ab1d2e9c143c"
 
       define_method(:install) do
         bin.install "piperig"
@@ -29,15 +29,15 @@ class Piperig < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joarhal/piperig/releases/download/v0.3.6/piperig_0.3.6_linux_amd64.tar.gz"
-      sha256 "cb25d1e01404970e717a0123a7f3d45018c0f1f376e5ca7c16088f94ad121941"
+      url "https://github.com/joarhal/piperig/releases/download/v0.3.7/piperig_0.3.7_linux_amd64.tar.gz"
+      sha256 "806d4e61c59bc04f6dff09098ce70ea94a7d29d94c7ae5b7e186f68ca8a977e6"
       define_method(:install) do
         bin.install "piperig"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joarhal/piperig/releases/download/v0.3.6/piperig_0.3.6_linux_arm64.tar.gz"
-      sha256 "6471a5247d764d9b5cb52ae734a461215b3e9bf178b9383cafa3cba34d7d348b"
+      url "https://github.com/joarhal/piperig/releases/download/v0.3.7/piperig_0.3.7_linux_arm64.tar.gz"
+      sha256 "67026db9ac309fbf163f20c6566b0bd350ab06bb44d24a9275f51d029fa8467b"
       define_method(:install) do
         bin.install "piperig"
       end
